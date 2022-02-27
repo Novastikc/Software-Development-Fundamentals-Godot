@@ -26,7 +26,7 @@ func _process(delta):
 func _colliding(area):
 	if area.is_in_group("left"):
 		print("left")
-		position.x=-3
+		position.x < -4.377
 	if area.is_in_group("right"):
 		print("right")
 	
