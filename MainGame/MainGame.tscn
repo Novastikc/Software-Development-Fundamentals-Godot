@@ -49,7 +49,7 @@ margin_top = 13.0
 margin_right = 8.0
 margin_bottom = 27.0
 
-[node name="Label" type="Label" parent="HUD"]
+[node name="HighScore" type="Label" parent="HUD"]
 margin_left = 12.0
 margin_top = 13.0
 margin_right = 12.0
