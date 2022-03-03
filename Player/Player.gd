@@ -20,16 +20,16 @@ func _physics_process(delta):
 func _process(delta):
 	if Input.is_action_just_pressed("fire"):
 		var bulletInstance = bulletSource.instance()
-		bulletInstance.position = Vector2(position.x, position.y-20)
+		bulletInstance.position = Vector2(position.x, position.y-40)
 		get_tree().get_root().add_child(bulletInstance)
 
 func _colliding(area):
 	if area.is_in_group("left"):
 		print("left")
-		position.x=50
+		position.x=80
 	if area.is_in_group("right"):
 		print("right")
-		position.x=1230
+		position.x=1210
 	
 func _not_colliding(area):
 	pass
