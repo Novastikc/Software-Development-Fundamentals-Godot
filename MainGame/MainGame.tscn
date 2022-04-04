@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Audio/backgroundMusic.wav" type="AudioStream" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=3]
 [ext_resource path="res://MainGame/MainGame.gd" type="Script" id=4]
 [ext_resource path="res://Enemy/Enemies.gd" type="Script" id=5]
+[ext_resource path="res://Title Menu/ButtonScript.gd" type="Script" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 20.9622, 388.001 )
@@ -22,6 +23,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 countdownMax = 15
+
+[node name="ButtonHUD" type="HBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GoBackButton" type="Button" parent="ButtonHUD"]
+margin_right = 148.0
+margin_bottom = 40.0
+text = "Return To Main Menu"
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://Title Menu/titleScene.tscn"
 
 [node name="HUD" type="HBoxContainer" parent="."]
 margin_right = 40.0

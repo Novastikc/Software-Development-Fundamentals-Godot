@@ -7,6 +7,9 @@ func _ready():
 	currentTimer = countdownMax
 	$HUD/Countdown.text = str(currentTimer)
 	
+	for button in $ButtonHUD.get_children():
+		button.connect("pressed", self, "_on_Button_pressed", [button.scene_to_load])
+	
 	set_process(true)
 	while currentTimer > 0:
 		yield(get_tree().create_timer(1.0), "timeout")
@@ -25,5 +28,5 @@ func _ready():
 	print(GlobalVariables.previousScores)
 	get_tree().change_scene("res://EndScene.tscn")
 
-func _process(delta):
+func _process(_delta):
 	$HUD/CurrentScore.text = str(GlobalVariables.scoringInformation["currentScore"])
