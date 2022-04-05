@@ -30,6 +30,4 @@ func _colliding(area):
 	if area.is_in_group("right"):
 		print("right")
 		position.x=1210
-	
-func _not_colliding(area):
-	pass
+

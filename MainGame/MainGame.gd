@@ -7,7 +7,7 @@ func _ready():
 	currentTimer = countdownMax
 	$HUD/Countdown.text = str(currentTimer)
 	
-	for button in $ButtonHUD.get_children():
+	for button in $"HUD/Buttons VBOX 2".get_children():
 		button.connect("pressed", self, "_on_Button_pressed", [button.scene_to_load])
 	
 	set_process(true)
@@ -30,3 +30,7 @@ func _ready():
 
 func _process(_delta):
 	$HUD/CurrentScore.text = str(GlobalVariables.scoringInformation["currentScore"])
+	
+func _on_Button_pressed(scene_to_load):
+	print(scene_to_load)
+	get_tree().change_scene(scene_to_load)

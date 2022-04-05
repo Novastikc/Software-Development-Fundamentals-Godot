@@ -24,16 +24,20 @@ __meta__ = {
 }
 countdownMax = 15
 
-[node name="ButtonHUD" type="HBoxContainer" parent="."]
-margin_right = 40.0
+[node name="HUD" type="HBoxContainer" parent="."]
+margin_right = 164.0
 margin_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GoBackButton" type="Button" parent="ButtonHUD"]
+[node name="Buttons VBOX 2" type="VBoxContainer" parent="HUD"]
 margin_right = 148.0
 margin_bottom = 40.0
+
+[node name="GoBackButton" type="Button" parent="HUD/Buttons VBOX 2"]
+margin_right = 148.0
+margin_bottom = 20.0
 text = "Return To Main Menu"
 script = ExtResource( 6 )
 __meta__ = {
@@ -41,39 +45,34 @@ __meta__ = {
 }
 scene_to_load = "res://Title Menu/titleScene.tscn"
 
-[node name="HUD" type="HBoxContainer" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Countdown" type="Label" parent="HUD"]
+margin_left = 152.0
 margin_top = 13.0
+margin_right = 152.0
 margin_bottom = 27.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CurrentScoreLabel" type="Label" parent="HUD"]
-margin_left = 4.0
+margin_left = 156.0
 margin_top = 13.0
-margin_right = 4.0
+margin_right = 156.0
 margin_bottom = 27.0
 
 [node name="CurrentScore" type="Label" parent="HUD"]
-margin_left = 8.0
+margin_left = 160.0
 margin_top = 13.0
-margin_right = 8.0
+margin_right = 160.0
 margin_bottom = 27.0
 
 [node name="HighScore" type="Label" parent="HUD"]
-margin_left = 12.0
+margin_left = 164.0
 margin_top = 13.0
-margin_right = 12.0
+margin_right = 164.0
 margin_bottom = 27.0
 
-[node name="Player" parent="HUD" instance=ExtResource( 2 )]
+[node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 642.94, 669.056 )
 
 [node name="Border_Left" type="Area2D" parent="." groups=[
