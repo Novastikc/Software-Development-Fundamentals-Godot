@@ -1,8 +1,18 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
 
-[node name="Control" type="Control"]
+[ext_resource path="res://Title Menu/ButtonScript.gd" type="Script" id=1]
+[ext_resource path="res://optionsMenu.gd" type="Script" id=2]
+[ext_resource path="res://BlackthornsDemoBlack-L2GE.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 37
+use_filter = true
+font_data = ExtResource( 3 )
+
+[node name="options-main" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -10,12 +20,18 @@ __meta__ = {
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
-
-[node name="Button" type="Button" parent="HBoxContainer"]
-margin_right = 42.0
-margin_bottom = 40.0
-size_flags_vertical = 3
-text = "Back"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+margin_right = 115.0
+margin_bottom = 44.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 1 )
+text = "Back"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://Title Menu/titleScene.tscn"

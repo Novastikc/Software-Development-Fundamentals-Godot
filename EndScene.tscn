@@ -1,20 +1,49 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Button.gd" type="Script" id=1]
 [ext_resource path="res://Title Menu/titleFontStyle.tres" type="DynamicFont" id=2]
+[ext_resource path="res://BlackthornsDemoBlack-L2GE.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 75
+outline_size = 10
+outline_color = Color( 0.92549, 0.54902, 0.54902, 1 )
+extra_spacing_top = 5
+extra_spacing_bottom = 5
+font_data = ExtResource( 3 )
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Button" type="Button" parent="."]
-margin_left = 569.178
-margin_top = 288.088
-margin_right = 886.178
-margin_bottom = 437.088
+margin_left = 481.828
+margin_top = 283.792
+margin_right = 798.828
+margin_bottom = 432.792
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 2 )
 text = "RESTART GAME"
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 1.29236
+margin_top = -1.29236
+margin_right = 492.292
+margin_bottom = 84.7076
+size_flags_horizontal = 7
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 1 )
+text = "Game Over"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
