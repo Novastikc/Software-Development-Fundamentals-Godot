@@ -1,11 +1,10 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Title Menu/ButtonScript.gd" type="Script" id=1]
 [ext_resource path="res://BlackberryJamPersonalUse-rXOB.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Images/spice bag.png" type="Texture" id=3]
 [ext_resource path="res://Organic Relief.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://Title Menu/titleScene.gd" type="Script" id=5]
-[ext_resource path="res://BlackthornsDemoBlack-L2GE.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Title Menu/QuitGame.gd" type="Script" id=7]
 [ext_resource path="res://Title Menu/titleFontStyle.tres" type="DynamicFont" id=8]
 
@@ -31,9 +30,6 @@ extra_spacing_top = 10
 extra_spacing_bottom = 10
 extra_spacing_char = 2
 font_data = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=4]
-font_data = ExtResource( 6 )
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
@@ -62,16 +58,17 @@ margin_right = 1020.0
 margin_bottom = 163.0
 custom_fonts/font = SubResource( 1 )
 text = "Spice Evaders"
+valign = 2
 
 [node name="Menu Buttons" type="HBoxContainer" parent="Layout"]
 margin_top = 167.0
 margin_right = 1280.0
-margin_bottom = 700.0
+margin_bottom = 702.0
 size_flags_vertical = 3
 
 [node name="Buttons VBOX" type="VBoxContainer" parent="Layout/Menu Buttons"]
 margin_right = 933.0
-margin_bottom = 533.0
+margin_bottom = 535.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
@@ -122,40 +119,36 @@ script = ExtResource( 7 )
 [node name="Title Picture" type="TextureRect" parent="Layout/Menu Buttons"]
 margin_left = 937.0
 margin_right = 1280.0
-margin_bottom = 533.0
+margin_bottom = 535.0
 texture = ExtResource( 3 )
 
 [node name="App Info" type="HBoxContainer" parent="Layout"]
-margin_top = 704.0
+margin_top = 706.0
 margin_right = 1280.0
 margin_bottom = 720.0
 
 [node name="Version" type="Label" parent="Layout/App Info"]
-margin_top = 1.0
-margin_right = 578.0
-margin_bottom = 15.0
+margin_right = 596.0
+margin_bottom = 14.0
 size_flags_horizontal = 3
 text = "0.1"
 
 [node name="Developer" type="Label" parent="Layout/App Info"]
-margin_left = 582.0
-margin_top = 1.0
-margin_right = 1160.0
-margin_bottom = 15.0
+margin_left = 600.0
+margin_right = 1196.0
+margin_bottom = 14.0
 size_flags_horizontal = 3
 text = "Lake Tuggeranong College - Cameron BLACK"
 
 [node name="High Score Label" type="Label" parent="Layout/App Info"]
-margin_left = 1164.0
-margin_right = 1267.0
-margin_bottom = 16.0
-custom_fonts/font = SubResource( 4 )
+margin_left = 1200.0
+margin_right = 1268.0
+margin_bottom = 14.0
 text = "High Score"
 
 [node name="High Score" type="Label" parent="Layout/App Info"]
-margin_left = 1271.0
-margin_top = 1.0
-margin_right = 1279.0
-margin_bottom = 15.0
+margin_left = 1272.0
+margin_right = 1280.0
+margin_bottom = 14.0
 text = "0"
 [connection signal="pressed" from="Layout/Menu Buttons/Buttons VBOX/Quit VBOX/QuitGame" to="Layout/Menu Buttons/Buttons VBOX/Quit VBOX/QuitGame" method="_on_QuitGame_pressed"]

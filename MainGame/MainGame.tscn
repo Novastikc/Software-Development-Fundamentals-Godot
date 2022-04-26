@@ -90,7 +90,7 @@ shape = SubResource( 1 )
 position = Vector2( 1287.42, 368.711 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Border_Right"]
-position = Vector2( 1.28287, -16.4019 )
+position = Vector2( 1.28275, -13.0616 )
 shape = SubResource( 1 )
 
 [node name="Border_Top" type="KinematicBody2D" parent="." groups=[
