@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Oreo_biscuits_(transparent_background).png-178e6280d7b34317852249840f710e68.stex"
+path="res://.import/player replacement.png-9a6f963401322d9be53614a0296db49b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/Oreo_biscuits_(transparent_background).png"
-dest_files=[ "res://.import/Oreo_biscuits_(transparent_background).png-178e6280d7b34317852249840f710e68.stex" ]
+source_file="res://Images/player replacement.png"
+dest_files=[ "res://.import/player replacement.png-9a6f963401322d9be53614a0296db49b.stex" ]
 
 [params]
 

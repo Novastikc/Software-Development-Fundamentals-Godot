@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spice body spray.png-824cffac2d58ec3ddee0c17654ccefcf.stex"
+path="res://.import/user replacement.png-012a7b0b0891a09894eedec6d973e86b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/spice body spray.png"
-dest_files=[ "res://.import/spice body spray.png-824cffac2d58ec3ddee0c17654ccefcf.stex" ]
+source_file="res://Images/user replacement.png"
+dest_files=[ "res://.import/user replacement.png-012a7b0b0891a09894eedec6d973e86b.stex" ]
 
 [params]
 
