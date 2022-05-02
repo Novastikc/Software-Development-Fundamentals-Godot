@@ -17,7 +17,7 @@ _global_script_class_icons={
 
 config/name="Software Development Fundamentals Godot"
 run/main_scene="res://Title Menu/titleScene.tscn"
-config/icon="res://icon.png"
+config/icon="res://Images/icon.png"
 
 [autoload]
 
@@ -27,7 +27,6 @@ GlobalVariables="*res://Global.gd"
 
 window/size/width=1280
 window/size/height=720
-window/size/resizable=false
 
 [global]
 

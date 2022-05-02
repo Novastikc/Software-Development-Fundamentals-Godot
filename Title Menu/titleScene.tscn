@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Title Menu/ButtonScript.gd" type="Script" id=1]
-[ext_resource path="res://BlackberryJamPersonalUse-rXOB.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Fonts/BlackberryJamPersonalUse-rXOB.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Images/spice bag.png" type="Texture" id=3]
-[ext_resource path="res://Organic Relief.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Fonts/Organic Relief.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://Title Menu/titleScene.gd" type="Script" id=5]
 [ext_resource path="res://Title Menu/QuitGame.gd" type="Script" id=7]
 [ext_resource path="res://Title Menu/titleFontStyle.tres" type="DynamicFont" id=8]

@@ -9,6 +9,5 @@ func _on_Button_Pressed(scene_to_load):
 	print(scene_to_load)
 	get_tree().change_scene(scene_to_load)
 
-
-func _on_CheckButton_toggled(button_pressed):
+func _on_RapidFireSelection_toggled(button_pressed):
 	GlobalVariables.rapidFire = button_pressed
