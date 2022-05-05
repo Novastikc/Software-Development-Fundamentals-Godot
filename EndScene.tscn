@@ -6,14 +6,14 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Button" type="Button" parent="."]
-margin_left = 481.828
-margin_top = 283.792
-margin_right = 798.828
-margin_bottom = 432.792
+margin_left = 468.364
+margin_top = 516.492
+margin_right = 807.364
+margin_bottom = 589.492
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 2 )
-text = "RESTART GAME"
+text = "TRY AGAIN?"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false

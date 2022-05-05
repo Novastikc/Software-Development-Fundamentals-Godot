@@ -19,14 +19,17 @@ func _physics_process(delta):
 
 func _process(delta):
 	if GlobalVariables.rapidFire:
-		pass
+		if Input.is_action_pressed("fire"):
+			var bulletInstance = bulletSource.instance()
+			bulletInstance.position = Vector2(position.x, position.y-40)
+			get_tree().get_root().add_child(bulletInstance)
 	else:
 		if Input.is_action_just_pressed("fire"):
 			var bulletInstance = bulletSource.instance()
 			bulletInstance.position = Vector2(position.x, position.y-40)
 			get_tree().get_root().add_child(bulletInstance)
 	if get_tree().get_nodes_in_group("enemy").size() == 0:
-		get_tree().change_scene("res://EndScene.tscn")
+		get_tree().change_scene("res://Win Scene/WinScene.tscn")
 
 func _colliding(area):
 	if area.is_in_group("left"):

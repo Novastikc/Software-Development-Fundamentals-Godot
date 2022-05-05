@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Title Menu/ButtonScript.gd" type="Script" id=1]
 [ext_resource path="res://optionsMenu.gd" type="Script" id=2]
 [ext_resource path="res://Fonts/BlackthornsDemoBlack-L2GE.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://RapidFireSelection.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 25
@@ -30,8 +31,10 @@ margin_left = 536.934
 margin_top = 500.192
 margin_right = 784.934
 margin_bottom = 540.192
+hint_tooltip = "Activates a rapidly firing beam of bullets, bound to shred enemies instantly."
 custom_fonts/font = SubResource( 1 )
 text = "RAPID FIRE"
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -48,6 +51,7 @@ __meta__ = {
 [node name="ReturnToMainMenu" type="Button" parent="HBoxContainer"]
 margin_right = 248.0
 margin_bottom = 44.0
+hint_tooltip = "Return to main menu."
 custom_fonts/font = SubResource( 2 )
 text = "Back"
 script = ExtResource( 1 )
@@ -55,4 +59,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_to_load = "res://Title Menu/titleScene.tscn"
-[connection signal="toggled" from="RapidFireSelection" to="." method="_on_CheckButton_toggled"]
+[connection signal="toggled" from="RapidFireSelection" to="RapidFireSelection" method="_on_RapidFireSelection_toggled"]
