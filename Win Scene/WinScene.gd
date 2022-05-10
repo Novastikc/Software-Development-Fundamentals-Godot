@@ -1,8 +1,6 @@
 extends Node2D
 
 func _ready():
-	if GlobalVariables.scoringInformation["currentScore"] > GlobalVariables.scoringInformation["highScoreFirst"]:
-		print("winner")
 	# Below sorts the array
 	GlobalVariables.scoringInformation["highScores"].sort()
 	
@@ -18,3 +16,14 @@ func _ready():
 	
 	#Debugging.
 	print(GlobalVariables.scoringInformation["highScores"])
+	saveData()
+
+func saveData():
+	var file = File.new()
+	var error = file.open(GlobalVariables.saveFile, file.WRITE)
+	if error == OK:
+		file.store_var(GlobalVariables.scoringInformation)
+		file.close()
+		print("!!Data Saved!!")
+	else :
+		print("!!Data Not Saved!!")

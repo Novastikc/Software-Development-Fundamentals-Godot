@@ -6,6 +6,13 @@ func _ready():
 		button.connect("pressed", self, "_on_Button_Pressed", [button.scene_to_load])
 	$"Layout/Menu Buttons/Buttons VBOX/Scene Buttons/StartGameButton".grab_focus()
 		
+	var file = File.new()
+	if file.file_exists(GlobalVariables.saveFile):
+		var error = file.open(GlobalVariables.saveFile, File.READ)
+		if error == OK:
+			var player_data = file.get_var()
+			file.close()
+			GlobalVariables.scoringInformation = player_data
 func _on_Button_Pressed(scene_to_load):
 	print(scene_to_load)
 	get_tree().change_scene(scene_to_load)
