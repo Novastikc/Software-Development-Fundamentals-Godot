@@ -69,12 +69,12 @@ size_flags_vertical = 3
 [node name="Buttons VBOX" type="VBoxContainer" parent="Layout/Menu Buttons"]
 margin_right = 933.0
 margin_bottom = 535.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
+size_flags_horizontal = 11
 
 [node name="Scene Buttons" type="VBoxContainer" parent="Layout/Menu Buttons/Buttons VBOX"]
 margin_right = 933.0
 margin_bottom = 144.0
+size_flags_horizontal = 5
 
 [node name="StartGameButton" type="Button" parent="Layout/Menu Buttons/Buttons VBOX/Scene Buttons"]
 margin_right = 933.0

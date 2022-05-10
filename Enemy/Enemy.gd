@@ -17,7 +17,7 @@ func _process(delta):
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
 	var my_random_number = rng.randf_range(2.0,30.0)
-	#yield(get_tree().create_timer(my_random_number), "timeout")
+	yield(get_tree().create_timer(my_random_number), "timeout")
 	# ^ the problem here is that the random timer allows differentiating enemies shoot bullets.
 	if GlobalVariables.enemyBulletInstanceCount < 10:
 		var bulletInstance = bullet.instance()
