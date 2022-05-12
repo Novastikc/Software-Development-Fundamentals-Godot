@@ -12,7 +12,7 @@ var previousScores = []
 var scoringInformation = {
 	"currentScore": 0,
 	"currentPlayer": "User",
-	"highScores": [0,0,0],
+	"highScores": [0,0,0,0,0],
 	"highScorePlayersName" : "Winner"
 }
 
