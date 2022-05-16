@@ -8,7 +8,7 @@ func _ready():
 	set_process(true)
 	set_physics_process(true)
 	$Area2D.connect("area_entered", self, "_colliding")
-	$Area2D.connect("area_exited", self, "_not_colliding")
+	#$Area2D.connect("area_exited", self, "_not_colliding")
 
 
 func _physics_process(delta):

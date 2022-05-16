@@ -27,3 +27,18 @@ func saveData():
 		print("!!Data Saved!!")
 	else :
 		print("!!Data Not Saved!!")
+
+# WHOLE RANT ABOUT TRYING TO GET THE FILE TO DISAPPEAR.
+
+#func delete_file_with_extension(ext):
+	#var dir = Directory.new()
+	#dir.open("user://save.dat")
+#http://docs.godotengine.org/en/stable/classes/class_directory.html?highlight=delete#class-directory-remove
+	#dir.list_dir_begin()
+	#while true:
+		#var file = dir.get_next()
+		#if file == "":
+			#break
+		#elif not file.begins_with(".") and file.right((file.length()-ext.length())) == ext:
+			#dir.remove(file)
+	#dir.list_dir_end()

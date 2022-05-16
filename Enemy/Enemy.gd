@@ -17,7 +17,7 @@ func _process(delta):
 	#yield(get_tree().create_timer(my_random_number), "timeout")
 	$Timer.start(my_random_number); yield($Timer, "timeout")
 	# ^ the problem here is that the random timer allows differentiating enemies shoot bullets.
-	if GlobalVariables.enemyBulletInstanceCount < 10:
+	if GlobalVariables.enemyBulletInstanceCount < 100:
 		var bulletInstance = bullet.instance()
 		
 		bulletInstance.position = Vector2(global_position.x, global_position.y)
