@@ -151,4 +151,5 @@ margin_left = 1274.0
 margin_right = 1280.0
 margin_bottom = 14.0
 text = "?"
+
 [connection signal="pressed" from="Layout/Menu Buttons/Buttons VBOX/Quit VBOX/QuitGame" to="Layout/Menu Buttons/Buttons VBOX/Quit VBOX/QuitGame" method="_on_QuitGame_pressed"]
